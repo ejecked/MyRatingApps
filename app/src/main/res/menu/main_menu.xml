@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Поиск"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="collapseActionView|ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:title="Сортировка"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/sort_date_desc"
+                android:title="По дате (новые)"
+                android:orderInCategory="100" />
+            <item
+                android:id="@+id/sort_date_asc"
+                android:title="По дате (старые)"
+                android:orderInCategory="110" />
+            <item
+                android:id="@+id/sort_rating_desc"
+                android:title="По рейтингу (высший)"
+                android:orderInCategory="120" />
+            <item
+                android:id="@+id/sort_rating_asc"
+                android:title="По рейтингу (низший)"
+                android:orderInCategory="130" />
+            <item
+                android:id="@+id/sort_title_asc"
+                android:title="По названию (А-Я)"
+                android:orderInCategory="140" />
+            <item
+                android:id="@+id/sort_title_desc"
+                android:title="По названию (Я-А)"
+                android:orderInCategory="150" />
+        </menu>
+    </item>
+</menu>

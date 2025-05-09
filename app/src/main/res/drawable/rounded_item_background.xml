@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+ <!-- Цвет фона, можно изменить -->
+    <corners android:radius="70dp"/> <!-- Радиус углов -->
+</shape>

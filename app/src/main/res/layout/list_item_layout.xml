@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_item_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:rotationX="-1">
+
+    <ImageView
+        android:id="@+id/imageViewListItem"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/darker_gray"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Название элемента" />
+
+        <TextView
+            android:id="@+id/textViewCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="Категория" />
+
+        <!-- Заменено textViewDescriptionOrDate на textViewComment -->
+        <TextView
+            android:id="@+id/textViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            tools:text="Комментарий" />
+
+        <!-- Заменено textViewDescriptionOrDate на textViewDateAdded -->
+        <TextView
+            android:id="@+id/textViewDateAdded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"
+            tools:text="Дата добавления" />
+
+        <RatingBar
+            android:id="@+id/ratingBarItem"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+    </LinearLayout>
+
+</LinearLayout>
